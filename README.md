@@ -3,6 +3,7 @@
 Author: Roland
 
 ---
+
 ## Live API
 
 You can access the deployed API here:
@@ -10,7 +11,6 @@ You can access the deployed API here:
 https://express-user-api-2aws.onrender.com
 
 Example endpoint:
-
 https://express-user-api-2aws.onrender.com/users
 
 Note:
@@ -37,11 +37,11 @@ The project demonstrates:
 
 ## Features
 
-- Create new users → `POST /users`
-- Retrieve all users → `GET /users`
-- Retrieve a user by ID → `GET /users/:id`
-- Update user information → `PUT /users/:id`
-- Delete users → `DELETE /users/:id`
+- Create new users → POST /users
+- Retrieve all users → GET /users
+- Retrieve a user by ID → GET /users/:id
+- Update user information → PUT /users/:id
+- Delete users → DELETE /users/:id
 - Input validation (prevents empty or missing names)
 - Duplicate user prevention (case-insensitive)
 - File-based data storage using JSON
@@ -50,31 +50,19 @@ The project demonstrates:
 
 ## Technologies Used
 
-- Node.js  
-- Express.js  
-- JavaScript  
-- JSON  
-- Thunder Client (API testing)  
-- Visual Studio Code  
+- Node.js
+- Express.js
+- JavaScript
+- JSON
+- Thunder Client
+- Visual Studio Code
 - Render (deployment)
 
 ---
 
-## Features
-
-This API supports the following operations:
-
-- Create a user → `POST /users`
-- Read all users → `GET /users`
-- Read one user → `GET /users/:id`
-- Update a user → `PUT /users/:id`
-- Delete a user → `DELETE /users/:id`
-  
----
-
 ## Project Files
 
-### `server.js`
+### server.js
 Main application file containing:
 - Express setup
 - Routes
@@ -82,34 +70,16 @@ Main application file containing:
 - File reading and writing
 - CRUD operations
 
-### `users.json`
+### users.json
 Stores the saved users in JSON format.
 
-### `package.json`
+### package.json
 Stores project metadata and dependencies.
 
-### `.gitignore`
-Prevents unnecessary files like `node_modules` from being uploaded.
+### .gitignore
+Prevents unnecessary files like node_modules from being uploaded.
 
 ---
-
-## Installation and Setup
-
-1. Open the project folder in Visual Studio Code  
-2. Open the terminal  
-
-3. Install dependencies:
-```bash
-npm install
-```
-4. Start the server 
-```bash
-node server.js
-```
-5. Open in browser:
-http://localhost:3000/
-
-### Websites
 
 ## API Endpoints
 
@@ -119,91 +89,33 @@ http://localhost:3000
 ### Base URL (Live)
 https://express-user-api-2aws.onrender.com
 
-About route
+---
+
+### Home Route
+http://localhost:3000/
+
+### About Route
 http://localhost:3000/about
 
 ---
 
-Get all users
+### Get All Users
+GET /users  
 http://localhost:3000/users
 
-Get user by ID
-http://localhost:3000/users/1
+---
+
+### Get User by ID
+GET /users/:id  
+Example: http://localhost:3000/users/1
 
 ---
 
-### GET user by ID
-GET /users/:id
-
-Example:
-GET /users/1
-
----
-
-### CREATE user
-POST /users
+### Create User
+POST /users  
 
 Example Body:
 ```json
 {
   "name": "Roland"
 }
-```
-
-----
-
-### API test route
-http://localhost:3000/api?name=Roland
-
-### GitHub Repository
-
-https://github.com/rpratts1/express-user-api
-
-## Useful Resources
-
-Node.js Documentation
-https://nodejs.org/
-
-Express.js Documentation
-https://expressjs.com/
-
-JSON Format Guide
-https://www.json.org/json-en.html
-
-NPM Documentation
-https://www.npmjs.com/
-
-Git Documentation
-https://git-scm.com/
-
-GitHub Platform
-https://github.com/
-
-## API Testing Tools
-
-Thunder Client
-https://www.thunderclient.com/
-
-Postman
-https://www.postman.com/
-
-https://www.postman.com/
-
-## Notes
-
-Data is stored locally in users.json
-IDs are auto-incremented
-Duplicate user names are not allowed
-
-## Future Improvements
-
-Connect to a database (MongoDB or MySQL)
-Add authentication
-Deploy API to cloud (Render)
-Add frontend interface
-
-
-
-
-
-
