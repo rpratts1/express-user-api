@@ -17,7 +17,7 @@ const fs = require('fs');
 const app = express();
 
 // Set the port number the server will listen on
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 
 // ============================================================
