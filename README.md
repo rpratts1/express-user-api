@@ -3,16 +3,18 @@
 Author: Roland
 
 ---
-
 ## Live API
 
-(Replace this after deployment)
+You can access the deployed API here:
 
-Base URL:  
-https://your-app-name.onrender.com
+https://express-user-api-2aws.onrender.com
 
-Example endpoint:  
-https://your-app-name.onrender.com/users
+Example endpoint:
+
+https://express-user-api-2aws.onrender.com/users
+
+Note:
+The live version may reset data due to free hosting limitations.
 
 ---
 
@@ -33,14 +35,28 @@ The project demonstrates:
 
 ---
 
+## Features
+
+- Create new users → `POST /users`
+- Retrieve all users → `GET /users`
+- Retrieve a user by ID → `GET /users/:id`
+- Update user information → `PUT /users/:id`
+- Delete users → `DELETE /users/:id`
+- Input validation (prevents empty or missing names)
+- Duplicate user prevention (case-insensitive)
+- File-based data storage using JSON
+
+---
+
 ## Technologies Used
 
-- Node.js
-- Express.js
-- JavaScript
-- JSON
-- Thunder Client
-- Visual Studio Code
+- Node.js  
+- Express.js  
+- JavaScript  
+- JSON  
+- Thunder Client (API testing)  
+- Visual Studio Code  
+- Render (deployment)
 
 ---
 
@@ -53,13 +69,7 @@ This API supports the following operations:
 - Read one user → `GET /users/:id`
 - Update a user → `PUT /users/:id`
 - Delete a user → `DELETE /users/:id`
-
-Additional features:
-- Rejects empty names
-- Rejects missing names
-- Rejects duplicate names (case-insensitive)
-- Saves user data to `users.json`
-
+  
 ---
 
 ## Project Files
@@ -101,12 +111,18 @@ http://localhost:3000/
 
 ### Websites
 
-## API Endpoints (Local Development)
-Home route
-http://localhost:3000/
+## API Endpoints
+
+### Base URL (Local)
+http://localhost:3000
+
+### Base URL (Live)
+https://express-user-api-2aws.onrender.com
 
 About route
 http://localhost:3000/about
+
+---
 
 Get all users
 http://localhost:3000/users
@@ -114,10 +130,32 @@ http://localhost:3000/users
 Get user by ID
 http://localhost:3000/users/1
 
-API test route
+---
+
+### GET user by ID
+GET /users/:id
+
+Example:
+GET /users/1
+
+---
+
+### CREATE user
+POST /users
+
+Example Body:
+```json
+{
+  "name": "Roland"
+}
+```
+
+----
+
+### API test route
 http://localhost:3000/api?name=Roland
 
-## GitHub Repository
+### GitHub Repository
 
 https://github.com/rpratts1/express-user-api
 
