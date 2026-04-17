@@ -148,3 +148,21 @@ Example:
 
 ```bash
 npm install
+
+---
+
+```markdown
+---
+
+## GitHub Repository
+
+https://github.com/rpratts1/express-user-api
+
+---
+
+## Future Improvements
+
+- Connect to a database (MongoDB or MySQL)
+- Add authentication
+- Build a frontend UI
+- Improve error handling
