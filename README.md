@@ -121,3 +121,45 @@ Example body:
 {
   "name": "Roland"
 }
+```
+
+---
+
+## Future Improvements
+
+To continue improving this project and make it more production-ready, the following enhancements are planned:
+
+### Major Planned Upgrades
+- Implement MongoDB to replace JSON file storage for better scalability and persistence
+- Add JWT (JSON Web Token) authentication for secure login and protected routes
+
+### Backend Enhancements
+- Use environment variables with `.env` for configuration management
+- Add centralized error handling middleware
+- Improve validation using libraries like Joi or Express Validator
+
+### Security Improvements
+- Implement password hashing using bcrypt
+- Add rate limiting to prevent abuse
+- Use Helmet to secure HTTP headers
+- Enable proper CORS configuration
+
+### Performance & Scalability
+- Optimize data handling with database indexing
+- Add caching for frequently requested data
+- Prepare application for scaling using Docker
+
+### Developer Experience
+- Add logging using Morgan or Winston
+- Write unit and integration tests using Jest or Mocha
+- Document API endpoints using Swagger or Postman collections
+
+### Frontend Integration
+- Build a frontend interface using React
+- Create a dashboard to manage users
+- Convert the project into a full-stack application
+
+### Deployment & DevOps
+- Set up CI/CD pipelines for automated deployment
+- Add monitoring and uptime tracking
+- Deploy using cloud services like AWS or Azure
