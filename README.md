@@ -125,6 +125,8 @@ Example body:
 
 ---
 
+These improvements will be implemented as part of ongoing development.
+
 ## Future Improvements
 
 To continue improving this project and make it more production-ready, the following enhancements are planned:
