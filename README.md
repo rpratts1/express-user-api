@@ -6,13 +6,21 @@ Author: Roland
 
 ## Live API
 
-(Replace this after deployment)
+You can access the deployed API here:
 
-Base URL:  
-https://your-app-name.onrender.com
+https://express-user-api-2aws.onrender.com
 
-Example endpoint:  
-https://your-app-name.onrender.com/users
+Base URL:
+https://express-user-api-2aws.onrender.com
+
+Example endpoint:
+https://express-user-api-2aws.onrender.com/users
+
+API test route:
+https://express-user-api-2aws.onrender.com/api?name=Roland
+
+Note:
+The live version may reset data due to free hosting limitations.
 
 ---
 
@@ -35,13 +43,13 @@ The project demonstrates:
 
 ## Features
 
-- Create new users → POST /users
-- Retrieve all users → GET /users
-- Retrieve a user by ID → GET /users/:id
-- Update user information → PUT /users/:id
-- Delete users → DELETE /users/:id
-- Input validation (prevents empty or missing names)
-- Duplicate user prevention (case-insensitive)
+- Create new users → `POST /users`
+- Retrieve all users → `GET /users`
+- Retrieve a user by ID → `GET /users/:id`
+- Update user information → `PUT /users/:id`
+- Delete users → `DELETE /users/:id`
+- Input validation prevents empty or missing names
+- Duplicate user prevention is case-insensitive
 - File-based data storage using JSON
 
 ---
@@ -54,13 +62,13 @@ The project demonstrates:
 - JSON
 - Thunder Client
 - Visual Studio Code
-- Render (deployment)
+- Render
 
 ---
 
 ## Project Files
 
-### server.js
+### `server.js`
 Main application file containing:
 - Express setup
 - Routes
@@ -68,94 +76,55 @@ Main application file containing:
 - File reading and writing
 - CRUD operations
 
-### users.json
+### `users.json`
 Stores the saved users in JSON format.
 
-### package.json
+### `package.json`
 Stores project metadata and dependencies.
 
-### .gitignore
-Prevents unnecessary files like node_modules from being uploaded.
+### `.gitignore`
+Prevents unnecessary files like `node_modules` from being uploaded.
 
 ---
 
 ## API Endpoints
 
 ### Base URL (Local)
-http://localhost:3000
+`http://localhost:3000`
 
 ### Base URL (Live)
-https://express-user-api-2aws.onrender.com
-
----
+`https://express-user-api-2aws.onrender.com`
 
 ### Home Route
-http://localhost:3000/
+`GET /`
+
+Example:
+`http://localhost:3000/`
 
 ### About Route
-http://localhost:3000/about
+`GET /about`
 
----
+Example:
+`http://localhost:3000/about`
 
 ### Get All Users
-GET /users  
-http://localhost:3000/users
+`GET /users`
 
-Get user by ID
-http://localhost:3000/users/1
+Example:
+`http://localhost:3000/users`
 
-API test route
-http://localhost:3000/api?name=Roland
+### Get User by ID
+`GET /users/:id`
 
-## GitHub Repository
+Example:
+`http://localhost:3000/users/1`
 
-https://github.com/rpratts1/express-user-api
+### Create User
+`POST /users`
 
-## Useful Resources
+Example body:
 
-Node.js Documentation
-https://nodejs.org/
-
-Express.js Documentation
-https://expressjs.com/
-
-JSON Format Guide
-https://www.json.org/json-en.html
-
-NPM Documentation
-https://www.npmjs.com/
-
-Git Documentation
-https://git-scm.com/
-
-GitHub Platform
-https://github.com/
-
-## API Testing Tools
-
-Thunder Client
-https://www.thunderclient.com/
-
-Postman
-https://www.postman.com/
-
-https://www.postman.com/
-
-## Notes
-
-Data is stored locally in users.json
-IDs are auto-incremented
-Duplicate user names are not allowed
-
-## Future Improvements
-
-Connect to a database (MongoDB or MySQL)
-Add authentication
-Deploy API to cloud (Render)
-Add frontend interface
-
-
-
-
-
-
+```json
+{
+  "name": "Roland"
+}
