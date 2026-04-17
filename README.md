@@ -10,16 +10,16 @@ You can access the deployed API here:
 
 https://express-user-api-2aws.onrender.com
 
-Base URL:
+Base URL:  
 https://express-user-api-2aws.onrender.com
 
-Example endpoint:
+Example endpoint:  
 https://express-user-api-2aws.onrender.com/users
 
-API test route:
+API test route:  
 https://express-user-api-2aws.onrender.com/api?name=Roland
 
-Note:
+Note:  
 The live version may reset data due to free hosting limitations.
 
 ---
@@ -96,73 +96,26 @@ Prevents unnecessary files like `node_modules` from being uploaded.
 `https://express-user-api-2aws.onrender.com`
 
 ### Home Route
-`GET /`
-
-Example:
-`http://localhost:3000/`
+`GET /`  
+Example: `http://localhost:3000/`
 
 ### About Route
-`GET /about`
-
-Example:
-`http://localhost:3000/about`
+`GET /about`  
+Example: `http://localhost:3000/about`
 
 ### Get All Users
-`GET /users`
-
-Example:
-`http://localhost:3000/users`
+`GET /users`  
+Example: `http://localhost:3000/users`
 
 ### Get User by ID
-`GET /users/:id`
-
-Example:
-`http://localhost:3000/users/1`
+`GET /users/:id`  
+Example: `http://localhost:3000/users/1`
 
 ### Create User
 `POST /users`
 
 Example body:
-
 ```json
 {
   "name": "Roland"
 }
-```
-
----
-
-### API Test Route
-`GET /api?name=Roland`
-
-Example:
-`http://localhost:3000/api?name=Roland`
-
----
-
-## Installation and Setup
-
-1. Open the project folder in Visual Studio Code
-2. Open the terminal
-3. Install dependencies:
-
-```bash
-npm install
-
----
-
-```markdown
----
-
-## GitHub Repository
-
-https://github.com/rpratts1/express-user-api
-
----
-
-## Future Improvements
-
-- Connect to a database (MongoDB or MySQL)
-- Add authentication
-- Build a frontend UI
-- Improve error handling
