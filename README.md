@@ -56,13 +56,15 @@ The project demonstrates:
 
 ## Technologies Used
 
-- Node.js
-- Express.js
+- Node.js → https://nodejs.org/
+- Express.js → https://expressjs.com/
 - JavaScript
-- JSON
-- Thunder Client
-- Visual Studio Code
-- Render
+- JSON → https://www.json.org/json-en.html
+- Visual Studio Code → https://code.visualstudio.com/
+- Windows 11 → https://www.microsoft.com/windows/windows-11
+- PowerShell → https://learn.microsoft.com/powershell/
+- Thunder Client → https://www.thunderclient.com/
+- Render → https://render.com/
 
 ---
 
