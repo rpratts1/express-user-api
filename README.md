@@ -6,15 +6,13 @@ Author: Roland
 
 ## Live API
 
-You can access the deployed API here:
+(Replace this after deployment)
 
-https://express-user-api-2aws.onrender.com
+Base URL:  
+https://your-app-name.onrender.com
 
-Example endpoint:
-https://express-user-api-2aws.onrender.com/users
-
-Note:
-The live version may reset data due to free hosting limitations.
+Example endpoint:  
+https://your-app-name.onrender.com/users
 
 ---
 
@@ -103,19 +101,61 @@ http://localhost:3000/about
 GET /users  
 http://localhost:3000/users
 
----
+Get user by ID
+http://localhost:3000/users/1
 
-### Get User by ID
-GET /users/:id  
-Example: http://localhost:3000/users/1
+API test route
+http://localhost:3000/api?name=Roland
 
----
+## GitHub Repository
 
-### Create User
-POST /users  
+https://github.com/rpratts1/express-user-api
 
-Example Body:
-```json
-{
-  "name": "Roland"
-}
+## Useful Resources
+
+Node.js Documentation
+https://nodejs.org/
+
+Express.js Documentation
+https://expressjs.com/
+
+JSON Format Guide
+https://www.json.org/json-en.html
+
+NPM Documentation
+https://www.npmjs.com/
+
+Git Documentation
+https://git-scm.com/
+
+GitHub Platform
+https://github.com/
+
+## API Testing Tools
+
+Thunder Client
+https://www.thunderclient.com/
+
+Postman
+https://www.postman.com/
+
+https://www.postman.com/
+
+## Notes
+
+Data is stored locally in users.json
+IDs are auto-incremented
+Duplicate user names are not allowed
+
+## Future Improvements
+
+Connect to a database (MongoDB or MySQL)
+Add authentication
+Deploy API to cloud (Render)
+Add frontend interface
+
+
+
+
+
+
