@@ -128,3 +128,23 @@ Example body:
 {
   "name": "Roland"
 }
+```
+
+---
+
+### API Test Route
+`GET /api?name=Roland`
+
+Example:
+`http://localhost:3000/api?name=Roland`
+
+---
+
+## Installation and Setup
+
+1. Open the project folder in Visual Studio Code
+2. Open the terminal
+3. Install dependencies:
+
+```bash
+npm install
