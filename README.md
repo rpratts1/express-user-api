@@ -78,13 +78,13 @@ The project demonstrates:
 ## Screenshots
 
 ### Get All Users
-![Get Users](./screenshots/get-users.png)
+![Get Users](https://raw.githubusercontent.com/rpratts1/express-user-api/main/screenshots/get-users.png)
 
 ### Create User Request
-![Create User](./screenshots/create-user.png)
+![Create User](https://raw.githubusercontent.com/rpratts1/express-user-api/main/screenshots/create-user.png)
 
 ### Live API in Browser
-![Live API](./screenshots/live-api.png)
+![Live API](https://raw.githubusercontent.com/rpratts1/express-user-api/main/screenshots/live-api.png)
 
 ---
 
@@ -149,15 +149,21 @@ Example: `http://localhost:3000/users/1`
 ### Create User
 `POST /users`
 
-Example body:
+### Example Response
+
 ```json
-{
-  "name": "Test"
-}
+[
+  {
+    "id": 1,
+    "name": "Test"
+  }
+]
 ```
 ---
 
 ## Running the Application Locally
+
+### Quick Start
 
 1. Clone the repository:
 
@@ -236,7 +242,6 @@ These improvements are planned to make the project more production-ready and sca
 - Deploy to AWS or Azure
 
 ## What I Learned
-
 - Built a REST API using Node.js and Express
 - Implemented CRUD operations
 - Handled JSON file-based storage
