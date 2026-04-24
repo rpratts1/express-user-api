@@ -1,5 +1,12 @@
 # Express User API Project
 
+A RESTful API built with Node.js and Express, featuring full CRUD operations and live deployment.
+
+![Node.js](https://img.shields.io/badge/Node.js-18.x-green)
+![Express](https://img.shields.io/badge/Express.js-Framework-black)
+![Render](https://img.shields.io/badge/Deployment-Render-blue)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
 Author: Roland
 
 ---
@@ -26,7 +33,7 @@ The live version may reset data due to free hosting limitations.
 
 ## Project Overview
 
-This project is a beginner-friendly REST API built with Node.js and Express. It supports full CRUD operations for users and stores user data in a local JSON file.
+This project is a lightweight REST API built with Node.js and Express. It supports full CRUD operations for users and stores user data in a local JSON file.
 
 The project demonstrates:
 - Express server setup
@@ -65,6 +72,32 @@ The project demonstrates:
 - PowerShell → https://learn.microsoft.com/powershell/
 - Thunder Client → https://www.thunderclient.com/
 - Render → https://render.com/
+
+---
+
+## Screenshots
+
+### Get All Users
+![Get Users](./screenshots/get-users.png)
+
+### Create User Request
+![Create User](./screenshots/create-user.png)
+
+### Live API in Browser
+![Live API](./screenshots/live-api.png)
+
+---
+
+## How It Works
+
+```mermaid
+graph TD
+A[Client Request] --> B[Express Server]
+B --> C[Routes]
+C --> D[users.json File]
+D --> C
+C --> E[JSON Response]
+```
 
 ---
 
@@ -122,46 +155,91 @@ Example body:
   "name": "Roland"
 }
 ```
+---
+
+## Running the Application Locally
+
+1. Clone the repository:
+
+```bash 
+git clone https://github.com/rpratts1/express-user-api.git
+```
+
+2. Navigate to the project folder:
+
+```bash
+cd express-user-api
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the server:
+
+```bash
+node server.js
+```
+
+5. Open in browser:
+
+http://localhost:3000
+
 
 ---
 
-These improvements will be implemented as part of ongoing development.
+## GitHub Repository
+
+https://github.com/rpratts1/express-user-api
+
+--- 
 
 ## Future Improvements
 
-To continue improving this project and make it more production-ready, the following enhancements are planned:
+These improvements are planned to make the project more production-ready and scalable.
 
 ### Major Planned Upgrades
-- Implement MongoDB to replace JSON file storage for better scalability and persistence
-- Add JWT (JSON Web Token) authentication for secure login and protected routes
+- Implement MongoDB to replace JSON file storage
+- Add JWT authentication for secure login and protected routes
 
 ### Backend Enhancements
-- Use environment variables with `.env` for configuration management
+- Use `.env` for configuration management
 - Add centralized error handling middleware
-- Improve validation using libraries like Joi or Express Validator
+- Improve validation using Joi or Express Validator
 
 ### Security Improvements
-- Implement password hashing using bcrypt
-- Add rate limiting to prevent abuse
-- Use Helmet to secure HTTP headers
-- Enable proper CORS configuration
+- Implement password hashing with bcrypt
+- Add rate limiting
+- Use Helmet for secure HTTP headers
+- Configure CORS properly
 
 ### Performance & Scalability
-- Optimize data handling with database indexing
-- Add caching for frequently requested data
-- Prepare application for scaling using Docker
+- Add database indexing
+- Implement caching
+- Prepare app for Docker deployment
 
 ### Developer Experience
-- Add logging using Morgan or Winston
-- Write unit and integration tests using Jest or Mocha
-- Document API endpoints using Swagger or Postman collections
+- Add logging (Morgan/Winston)
+- Write unit and integration tests (Jest/Mocha)
+- Document API with Swagger
 
 ### Frontend Integration
-- Build a frontend interface using React
-- Create a dashboard to manage users
-- Convert the project into a full-stack application
+- Build React frontend
+- Create user dashboard
+- Convert to full-stack application
 
 ### Deployment & DevOps
-- Set up CI/CD pipelines for automated deployment
+- Set up CI/CD pipelines
 - Add monitoring and uptime tracking
-- Deploy using cloud services like AWS or Azure
+- Deploy to AWS or Azure
+
+## What I Learned
+
+- Built a REST API using Node.js and Express
+- Implemented CRUD operations
+- Handled JSON file-based storage
+- Performed API testing using Thunder Client
+- Deployed a live API using Render
+- Managed version control using Git and GitHub
