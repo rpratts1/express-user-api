@@ -91,12 +91,12 @@ The project demonstrates:
 ## How It Works
 
 ```mermaid
-graph TD
-A[Client Request] --> B[Express Server]
-B --> C[Routes]
-C --> D[users.json File]
-D --> C
-C --> E[JSON Response]
+flowchart TD
+    A[Client] --> B[Express Server]
+    B --> C[Routes]
+    C --> D[users.json]
+    D --> C
+    C --> E[Response to Client]
 ```
 
 ---
@@ -152,7 +152,7 @@ Example: `http://localhost:3000/users/1`
 Example body:
 ```json
 {
-  "name": "Roland"
+  "name": "Test"
 }
 ```
 ---
@@ -243,3 +243,13 @@ These improvements are planned to make the project more production-ready and sca
 - Performed API testing using Thunder Client
 - Deployed a live API using Render
 - Managed version control using Git and GitHub
+
+## Why This Project Matters
+
+This project demonstrates:
+- Backend API development
+- RESTful design principles
+- Data validation and error handling
+- Real-world deployment workflow
+- Version control using Git and GitHub
+
