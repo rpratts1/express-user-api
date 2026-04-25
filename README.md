@@ -46,7 +46,7 @@ The project demonstrates:
 - JSON request handling
 - Input validation
 - Duplicate-name checking
-- File-based persistence using `users.json`
+- MongoDB database persistence using Mongoose
 - API testing with Thunder Client
 
 ---
@@ -103,16 +103,16 @@ The project demonstrates:
 ## How It Works
 
 ```mermaid
-flowchart TD
-    A[Client or Thunder Client] --> B[Express Server]
-    B --> C[API Routes]
+flowchart LR
+    A[Client / Thunder Client] --> B[Express API Server]
+    B --> C[Routes Controller]
     C --> D[Mongoose Model]
-    D --> E[MongoDB Database]
+    D --> E[(MongoDB Database)]
     E --> D
     D --> C
     C --> F[JSON Response]
     F --> A
-    ```
+```
 
 ---
 
@@ -147,12 +147,12 @@ Example: http://localhost:3000/users/1
 
 ### Create User
 
-## POST /users
+`POST /users`
 
 Example request body:
 
+```json
 {
-  "id": 1,
   "name": "Test"
 }
 
@@ -217,8 +217,8 @@ Main application file containing:
 - File reading and writing
 - CRUD operations
 
-### `users.json`
-Stores the saved users in JSON format.
+### `users.json` (legacy)
+Previously used for file-based storage before migrating to MongoDB.
 
 ### `package.json`
 Stores project metadata and dependencies.
