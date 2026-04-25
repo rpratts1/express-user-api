@@ -67,11 +67,10 @@ The project demonstrates:
 ## Tech Stack
 
 - Backend: Node.js, Express.js
-- Data Storage: JSON (file-based)
+- Data Storage: MongoDB (Mongoose)
 - Testing: Thunder Client
 - Deployment: Render
 - Tools: VS Code, PowerShell
-- Database: MongoDB (Mongoose)
 
 ---
 
@@ -150,17 +149,18 @@ Example: http://localhost:3000/users/1
 Example request body:
 
 {
+  "id": 1,
   "name": "Test"
 }
 
 Example Response 
 
-[
-  {
-    "id": 1,
-    "name": "Test"
-  }
-]
+{
+  "_id": "661234abcd1234",
+  "name": "Test",
+  "createdAt": "...",
+  "updatedAt": "..."
+}
 
 ## Running the Application Locally
 
