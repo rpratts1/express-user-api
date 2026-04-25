@@ -6,6 +6,9 @@ A RESTful API built with Node.js and Express, featuring full CRUD operations and
 ![Express](https://img.shields.io/badge/Express.js-Framework-black)
 ![Render](https://img.shields.io/badge/Deployment-Render-blue)
 ![Status](https://img.shields.io/badge/Status-Active-success)
+[![Npm package version](https://badgen.net/npm/v/express)](https://npmjs.com/package/express)
+[![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
 Author: Roland
 
@@ -82,7 +85,7 @@ The project demonstrates:
 - PowerShell → https://learn.microsoft.com/powershell/
 - Thunder Client → https://www.thunderclient.com/
 - Render → https://render.com/
-
+- MongoDB → https://www.mongodb.com/
 ---
 
 ## Screenshots
@@ -222,6 +225,17 @@ Prevents unnecessary files like `node_modules` from being uploaded.
 
 ---
 
+## Environment Variables
+
+Create a `.env` file in the root directory and add:
+
+```
+MONGO_URI=your_mongodb_connection_string
+PORT=3000
+```
+
+---
+
 ## GitHub Repository
 
 https://github.com/rpratts1/express-user-api
@@ -282,6 +296,7 @@ These improvements are planned to make the project more production-ready and sca
 ## Why This Project Matters
 
 This project demonstrates:
+
 - Backend API development
 - RESTful design principles
 - Data validation and error handling
