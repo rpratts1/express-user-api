@@ -104,12 +104,15 @@ The project demonstrates:
 
 ```mermaid
 flowchart TD
-    A[Client] --> B[Express Server]
-    B --> C[Routes]
-    C --> D[users.json]
+    A[Client or Thunder Client] --> B[Express Server]
+    B --> C[API Routes]
+    C --> D[Mongoose Model]
+    D --> E[MongoDB Database]
+    E --> D
     D --> C
-    C --> E[Response to Client]
-```
+    C --> F[JSON Response]
+    F --> A
+    ```
 
 ---
 
