@@ -61,11 +61,21 @@ The project demonstrates:
 
 ---
 
+## Tech Stack
+
+- Backend: Node.js, Express.js
+- Data Storage: JSON (file-based)
+- Testing: Thunder Client
+- Deployment: Render
+- Tools: VS Code, PowerShell
+- Database: MongoDB (Mongoose)
+
+---
+
 ## Technologies Used
 
 - Node.js → https://nodejs.org/
 - Express.js → https://expressjs.com/
-- JavaScript
 - JSON → https://www.json.org/json-en.html
 - Visual Studio Code → https://code.visualstudio.com/
 - Windows 11 → https://www.microsoft.com/windows/windows-11
@@ -101,6 +111,96 @@ flowchart TD
 
 ---
 
+## API Endpoints
+### Base URL (Local)
+
+http://localhost:3000
+
+### Base URL (Live)
+
+https://express-user-api-2aws.onrender.com
+
+### Home Route
+
+GET /
+Example: http://localhost:3000/
+
+### About Route
+
+GET /about
+Example: http://localhost:3000/about
+
+### Get All Users
+
+GET /users
+Example: http://localhost:3000/users
+
+### Get User by ID
+
+GET /users/:id
+Example: http://localhost:3000/users/1
+
+### Create User
+
+## POST /users
+
+Example request body:
+
+{
+  "name": "Test"
+}
+
+Example Response 
+
+[
+  {
+    "id": 1,
+    "name": "Test"
+  }
+]
+
+## Running the Application Locally
+
+### Quick Start
+
+```
+npm install
+```
+
+```
+node server.js
+```
+
+### Manual Setup
+1. Clone the repository:
+
+git clone https://github.com/rpratts1/express-user-api.git
+
+2. Navigate to the project folder:
+
+```
+cd express-user-api
+```
+
+3. Install dependencies:
+
+```
+npm install
+```
+
+4. Start the server:
+
+```
+node server.js 
+```
+
+5. Open in browser:
+
+http://localhost:3000
+
+----
+
+
 ## Project Files
 
 ### `server.js`
@@ -122,92 +222,18 @@ Prevents unnecessary files like `node_modules` from being uploaded.
 
 ---
 
-## API Endpoints
-
-### Base URL (Local)
-`http://localhost:3000`
-
-### Base URL (Live)
-`https://express-user-api-2aws.onrender.com`
-
-### Home Route
-`GET /`  
-Example: `http://localhost:3000/`
-
-### About Route
-`GET /about`  
-Example: `http://localhost:3000/about`
-
-### Get All Users
-`GET /users`  
-Example: `http://localhost:3000/users`
-
-### Get User by ID
-`GET /users/:id`  
-Example: `http://localhost:3000/users/1`
-
-### Create User
-`POST /users`
-
-### Example Response
-
-```json
-[
-  {
-    "id": 1,
-    "name": "Test"
-  }
-]
-```
----
-
-## Running the Application Locally
-
-### Quick Start
-
-1. Clone the repository:
-
-```bash 
-git clone https://github.com/rpratts1/express-user-api.git
-```
-
-2. Navigate to the project folder:
-
-```bash
-cd express-user-api
-```
-
-3. Install dependencies:
-
-```bash
-npm install
-```
-
-4. Start the server:
-
-```bash
-node server.js
-```
-
-5. Open in browser:
-
-http://localhost:3000
-
-
----
-
 ## GitHub Repository
 
 https://github.com/rpratts1/express-user-api
 
---- 
+---
 
 ## Future Improvements
 
 These improvements are planned to make the project more production-ready and scalable.
 
 ### Major Planned Upgrades
-- Implement MongoDB to replace JSON file storage
+- ✔ MongoDB integration (implemented)
 - Add JWT authentication for secure login and protected routes
 
 ### Backend Enhancements
@@ -241,6 +267,8 @@ These improvements are planned to make the project more production-ready and sca
 - Add monitoring and uptime tracking
 - Deploy to AWS or Azure
 
+---
+
 ## What I Learned
 - Built a REST API using Node.js and Express
 - Implemented CRUD operations
@@ -248,6 +276,8 @@ These improvements are planned to make the project more production-ready and sca
 - Performed API testing using Thunder Client
 - Deployed a live API using Render
 - Managed version control using Git and GitHub
+
+---
 
 ## Why This Project Matters
 
@@ -257,4 +287,3 @@ This project demonstrates:
 - Data validation and error handling
 - Real-world deployment workflow
 - Version control using Git and GitHub
-
